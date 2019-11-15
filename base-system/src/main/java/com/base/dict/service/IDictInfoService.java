@@ -16,6 +16,8 @@ public interface IDictInfoService {
 
     public AjaxResult findDictInfoPageList(DictInfoEntity dictInfoEntity);
 
+    public AjaxResult findDictInfoByType(DictInfoEntity dictInfoEntity);
+
     public AjaxResult insertDictInfo(DictInfoEntity dictInfoEntity);
 
     public AjaxResult deleteDictInfo(DictInfoEntity dictInfoEntity);

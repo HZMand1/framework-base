@@ -17,8 +17,9 @@
 
     <modules>
         <module>base-common</module>
+        <module>base-system</module>
         <module>base-entity</module>
-        <module>base-entity</module>
+        <module>base-payment</module>
     </modules>
 
     <properties>
@@ -86,6 +87,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <dependency>

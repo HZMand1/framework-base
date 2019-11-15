@@ -40,6 +40,12 @@ public class RestDictInfoController {
         return dictInfoService.findDictInfoPageList(dictInfoEntity);
     }
 
+    @ApiOperation(value = "根据类型查询数据字典数据")
+    @RequestMapping(value = "findDictInfoByType", method = RequestMethod.POST)
+    public AjaxResult findDictInfoByType(@ApiParam(value = "数据字典实体", required = true) @RequestBody DictInfoEntity dictInfoEntity) {
+        return dictInfoService.findDictInfoByType(dictInfoEntity);
+    }
+
     @ApiOperation(value = "新增数据字典数据")
     @RequestMapping(value = "insertDictInfo", method = RequestMethod.POST)
     public AjaxResult insertDictInfo(@ApiParam(value = "数据字典实体", required = true) @RequestBody DictInfoEntity dictInfoEntity) {
