@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符  [%C.%M]-[%L]  包名，方法，行数-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level]-[%C.%M]-[%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="springboot"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>logs/logback/springboot_%d{yyyy-M-d}.log
+            </FileNamePattern>
+            <MaxHistory>10</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="smile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>logs/logback/smile_%d{yyyy-M-d}.log
+            </FileNamePattern>
+            <MaxHistory>10</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework.boot" level="debug"
+            additivity="false">
+        <appender-ref ref="springboot" />
+    </logger>
+
+    <!-- mybatis日志打印 -->
+    <logger name="com.springboot.demo.dao" level="DEBUG"></logger>
+
+    <!-- name包必须能够扫描到所以类，包括启动类 -->
+    <logger name="com.springboot.demo" level="debug" additivity="false">
+        <appender-ref ref="stdout" />
+    </logger>
+
+    <logger name="org.springframework.scheduling">
+        <level value="info" />
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="stdout" />
+        <!--<appender-ref ref="springboot" />
+        <appender-ref ref="smile" />-->
+    </root>
+</configuration>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.base</groupId>
+    <artifactId>framework-base</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>framework-base</name>
+    <description>基础框架搭建</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>base-common</module>
+        <module>base-entity</module>
+        <module>base-entity</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- springboot -->
+        <springboot.version>2.0.3.RELEASE</springboot.version>
+        <!-- jdk -->
+        <java.version>1.8</java.version>
+        <!-- json -->
+        <fastjson.version>1.2.58</fastjson.version>
+        <!-- swagger -->
+        <swagger.version>2.8.0</swagger.version>
+        <!-- pagehelper -->
+        <pagehelper.version>1.2.10</pagehelper.version>
+        <!-- mybatis -->
+        <mybatis-spring.version>1.3.2</mybatis-spring.version>
+        <mybatis-plus.version>2.2.0</mybatis-plus.version>
+        <!-- tk mapper -->
+        <mapper-spring.version>2.0.0</mapper-spring.version>
+        <!-- druid -->
+        <druid.version>1.0.15</druid.version>
+        <!-- database -->
+        <mysql.version>5.1.30</mysql.version>
+        <!-- log4j -->
+        <log4j.version>1.3.8.RELEASE</log4j.version>
+        <log4j-api.version>2.11.0</log4j-api.version>
+        <!-- commons -->
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <commons-lang3.version>3.7</commons-lang3.version>
+        <commons-io.version>2.6</commons-io.version>
+        <commons-httpclient.version>3.1</commons-httpclient.version>
+        <!-- shiro -->
+        <extrassr.version>2.0.0</extrassr.version>
+        <shiro-redis.version>2.4.2.1-RELEASE</shiro-redis.version>
+        <shiro.version>1.3.2</shiro.version>
+        <!-- jsoup -->
+        <jsoup.version>1.9.2</jsoup.version>
+        <!-- elasticsearch -->
+        <elasticsearch.version>5.1.2</elasticsearch.version>
+        <elasticsearch-sql.version>5.1.2.0</elasticsearch-sql.version>
+        <!-- dom4j -->
+        <dom4j.version>1.6.1</dom4j.version>
+        <!-- quartz -->
+        <quartz.version>2.3.0</quartz.version>
+        <!-- web3j -->
+        <web3j.version>1.6.0</web3j.version>
+        <!-- pinyin4j -->
+        <pinyin4j.version>2.5.0</pinyin4j.version>
+        <!-- reflectasm -->
+        <reflectasm.version>1.11.7</reflectasm.version>
+        <!-- poi -->
+        <poi.version>3.17</poi.version>
+        <!-- httpclient -->
+        <httpclient.version>4.5.5</httpclient.version>
+        <!-- lombok -->
+        <lombok.version>1.16.16</lombok.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <!-- druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+        <!--mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis-spring.version}</version>
+        </dependency>
+
+        <!-- mybatis-plus mybatis增强组件 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+
+        <!--mybatis-mapper -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>${mapper-spring.version}</version>
+        </dependency>
+
+        <!--pagehelper -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+
+        <!-- fast-json -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

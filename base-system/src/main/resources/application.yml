@@ -1,0 +1,93 @@
+server:
+  port: 8081
+  compression:
+    enabled: true
+  undertow:
+    uriEncoding: utf-8
+spring:
+  application:
+    name: northwest-seed-app
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  servlet:
+    multipart:
+      maxFileSize: "10MB"
+      maxRequestSize: "20MB"
+#  redis:
+#    host: localhost #也可连自己本地机器
+#    port: 6379
+#    timeout: 5000
+#    database: 1
+#    pool:
+#      testOnBorrow: true
+#      numTestsPerEvictionRun: 1024
+#      timeBetweenEvictionRunsMillis: 30000
+#      minEvictableIdleTimeMillis: 1800000
+#      softMinEvictableIdleTimeMillis: 1800000
+#      testWhileIdle: true
+#      blockWhenExhausted: false
+#    jedis:
+#      pool:
+#        max-idle: 600
+#        max-active: 1000
+#        min-idle: 1
+#        max-wait: -1
+#redis:
+#  defaultExpiration: 0
+jdbc:
+  datasources: master,base-r,base-w
+  master:
+    dsType: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.252:3306/seed
+    username: paohe
+    password: paohe!@#
+  base-r:
+    dsType: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.252:3306/seed
+    username: paohe
+    password: paohe!@#
+  base-w:
+    dsType: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.252:3306/seed
+    username: paohe
+    password: paohe!@#
+datasource:
+  initialSize: 5
+  minIdle: 5
+  maxActive: 20
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  validationQuery: SELECT 1 FROM DUAL
+  testWhileIdle: false
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 100
+  filters: stat,wall,log4j
+  connectionProperties: druid.stat.mergeSql=true
+druid:
+  loginUsername: admin
+  loginPassword: admin
+  resetEnable: true
+mybatis:
+  type-aliases-package: com.base.*.model
+  mapper-locations: classpath*:dao/**/*.xml
+mapper:
+  mappers: com.base.dao.MyMapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count\=countSql
+
+# 打印sql
+logging:
+  level:
+    cn.paohe : debug
