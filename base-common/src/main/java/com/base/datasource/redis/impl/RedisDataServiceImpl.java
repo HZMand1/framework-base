@@ -176,14 +176,14 @@ public class RedisDataServiceImpl implements IRedisDataService {
         });
     }
 
-    public boolean set(final String key, final int exprieInSecond, final String value) {
+    public boolean set(final String key, final long exprieInSecond, final String value) {
         try {
             this.redisTemplate.execute(new RedisCallback<Object>() {
                 public Object doInRedis(RedisConnection connection) throws DataAccessException {
                     if (exprieInSecond <= 0) {
                         connection.set(RedisDataServiceImpl.this.redisTemplate.getStringSerializer().serialize(key), RedisDataServiceImpl.this.redisTemplate.getStringSerializer().serialize(value));
                     } else {
-                        connection.setEx(RedisDataServiceImpl.this.redisTemplate.getStringSerializer().serialize(key), (long)exprieInSecond, RedisDataServiceImpl.this.redisTemplate.getStringSerializer().serialize(value));
+                        connection.setEx(RedisDataServiceImpl.this.redisTemplate.getStringSerializer().serialize(key), exprieInSecond, RedisDataServiceImpl.this.redisTemplate.getStringSerializer().serialize(value));
                     }
 
                     return null;

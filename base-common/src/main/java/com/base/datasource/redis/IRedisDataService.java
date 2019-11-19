@@ -32,7 +32,7 @@ public interface IRedisDataService {
 
     void hDelete(String var1, String var2);
 
-    boolean set(String var1, int var2, String var3);
+    boolean set(String var1, long var2, String var3);
 
     void flushAll();
 
