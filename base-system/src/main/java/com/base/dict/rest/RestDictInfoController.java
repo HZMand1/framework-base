@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/rest/sys/dict/")
-@Api(value = "数据字典接口", tags = {"rest-seed-outlet-user"})
+@Api(value = "数据字典接口", tags = {"rest-sys-dict"})
 public class RestDictInfoController {
 
     @Autowired
