@@ -1,7 +1,7 @@
 # framework-base
 
-2019-11-13 整合了spring-boot,mybatis,Mymapper,Pagehelp，logback+sl4j日志和门面
-2019-11-14 整合了redis，开发了常用的数据字典功能
+##2019-11-13 整合了spring-boot,mybatis,Mymapper,Pagehelp，logback+sl4j日志和门面
+##2019-11-14 整合了redis，开发了常用的数据字典功能
 2019-11-15 提交部分工具类
   SnowFlakeIds 分布式主键生成
   ReflectUtil  bean-map的转换
