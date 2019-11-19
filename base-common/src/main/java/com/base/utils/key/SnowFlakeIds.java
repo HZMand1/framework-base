@@ -4,10 +4,10 @@ import java.util.Random;
 
 
 /**TODO  雪花算法生成唯一主键ID
- * @author:      吕观林
+ * @author:      黄芝民
  * @date:        2019年10月18日 上午9:15:18 
  * @version      V1.0   
- * @copyright    广东跑合中药材有限公司 Copyright (c) 2019
+ * @copyright    XXX Copyright (c) 2019
  */
 @SuppressWarnings("all")
 public class SnowFlakeIds {

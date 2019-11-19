@@ -11,7 +11,7 @@ import java.util.*;
  * @version V1.0
  * @author: 黄芝民
  * @date: 2019/11/14 14:28
- * @copyright 广东跑合中药材有限公司 Copyright (c) 2019
+ * @copyright XXX Copyright (c) 2019
  */
 public class ObjectUtils {
     public ObjectUtils() {
