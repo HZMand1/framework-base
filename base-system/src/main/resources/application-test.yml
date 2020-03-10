@@ -1,12 +1,12 @@
 server:
-  port: 9000
+  port: 9002
   compression:
     enabled: true
   undertow:
     uriEncoding: utf-8
 spring:
   application:
-    name: northwest-seed-app
+    name: base-system
   jackson:
     serialization:
       write-dates-as-timestamps: true

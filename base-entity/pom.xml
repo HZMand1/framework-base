@@ -13,7 +13,6 @@
     <name>base-entity</name>
     <description>公共实体类</description>
     <properties>
-        <!-- lombok -->
         <lombok.version>1.16.16</lombok.version>
     </properties>
 
