@@ -14,6 +14,21 @@
     <description>支付模块</description>
 
     <properties>
+
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.base</groupId>
+            <artifactId>base-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- 微信支付sdk -->
+        <dependency>
+            <groupId>com.github.wxpay</groupId>
+            <artifactId>wxpay-sdk</artifactId>
+            <version>0.0.3</version>
+        </dependency>
+    </dependencies>
 
 </project>

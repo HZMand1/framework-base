@@ -1,0 +1,9 @@
+wxpay:
+  appid: wx0bdf3d20917144b3
+  mch_id: 1486302752
+  api_key: ABCDEFGHIJKLMNopqrstuvwxyz123456
+  notify_url: http://delvelop.paohe.cn/rest/vip/WXPay/notifyUrl
+  trade_type: NATIVE
+  wxpay_url: https://api.mch.weixin.qq.com/pay/unifiedorder
+  order_query_url: https://api.mch.weixin.qq.com/pay/orderquery
+  close_order: https://api.mch.weixin.qq.com/pay/closeorder

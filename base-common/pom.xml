@@ -16,6 +16,8 @@
     <properties>
         <commons-lang3.version>3.5</commons-lang3.version>
         <servlet-api.version>2.5</servlet-api.version>
+        <httpcore.version>4.4.12</httpcore.version>
+        <httpclient.version>4.5.5</httpclient.version>
     </properties>
 
     <dependencies>
@@ -51,6 +53,16 @@
             <artifactId>servlet-api</artifactId>
             <version>${servlet-api.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>${httpcore.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
         </dependency>
 
     </dependencies>
