@@ -1,6 +1,6 @@
 # schedule
 
->2020 准备集成zookeeper 和 un-code 主要目的是想学习下zookeeper  <br/>
+>集成zookeeper 和 un-code 主要目的是想学习下zookeeper  <br/>
 >分布式定时任务框架Uncode-Schedule <br/>
 >还有其他的框架，分别是：
 >

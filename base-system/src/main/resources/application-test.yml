@@ -92,7 +92,7 @@ logging:
   level:
     com.base : debug
 zookeeper:
-  address: 127.0.0.1:2182
+  address: 192.168.100.100:2182
 uncode:
   schedule:
     zkUsername: uncode
