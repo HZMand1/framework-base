@@ -18,6 +18,7 @@
         <servlet-api.version>2.5</servlet-api.version>
         <httpcore.version>4.4.12</httpcore.version>
         <httpclient.version>4.5.5</httpclient.version>
+        <javatuples.version>1.2</javatuples.version>
     </properties>
 
     <dependencies>
@@ -63,6 +64,12 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${httpclient.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.javatuples</groupId>
+            <artifactId>javatuples</artifactId>
+            <version>${javatuples.version}</version>
         </dependency>
 
     </dependencies>

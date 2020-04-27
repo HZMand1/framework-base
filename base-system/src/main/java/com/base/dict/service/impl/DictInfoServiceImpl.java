@@ -7,6 +7,7 @@ import com.base.dict.dao.IDictInfoMapper;
 import com.base.dict.service.IDictInfoService;
 import com.base.enums.BaseEnumCollections;
 import com.base.model.DictInfoEntity;
+import com.base.utils.mymapper.BaseService;
 import com.base.utils.type.StringUtil;
 import com.base.vo.AjaxResult;
 import com.github.pagehelper.PageHelper;
@@ -18,6 +19,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -30,7 +32,7 @@ import java.util.List;
  */
 @Service("dictInfoService")
 @Transactional(rollbackFor = Exception.class)
-public class DictInfoServiceImpl implements IDictInfoService {
+public class DictInfoServiceImpl extends BaseService implements IDictInfoService {
 
     private final static Logger log = LoggerFactory.getLogger(DictInfoServiceImpl.class);
 
@@ -39,7 +41,7 @@ public class DictInfoServiceImpl implements IDictInfoService {
     @Autowired
     private IRedisDataService redisDataService;
 
-    @Autowired
+    @Resource
     private IDictInfoMapper dictInfoMapper;
 
     @Override
@@ -54,7 +56,6 @@ public class DictInfoServiceImpl implements IDictInfoService {
     public AjaxResult findDictInfoPageList(DictInfoEntity dictInfoEntity) {
         PageHelper.startPage(dictInfoEntity.getStart(), dictInfoEntity.getPageSize());
         Example example = new Example(dictInfoEntity.getClass());
-//        example.setOrderByClause("ORDERS ASC,UPDATETIME DESC,ADDTIME DESC");
         List<DictInfoEntity> list = dictInfoMapper.selectByExample(example);
         PageInfo<DictInfoEntity> pageInfo = new PageInfo<DictInfoEntity>(list);
         AjaxResult result = new AjaxResult(BaseEnumCollections.RestHttpStatus.AJAX_CODE_YES.value, "获取数据字典信息成功");
