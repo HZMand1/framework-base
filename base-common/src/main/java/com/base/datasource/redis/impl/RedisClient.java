@@ -1,4 +1,4 @@
-package com.base.utils.redis;
+package com.base.datasource.redis.impl;
 
 import org.springframework.data.redis.connection.RedisZSetCommands.Range;
 import org.springframework.data.redis.core.RedisTemplate;
