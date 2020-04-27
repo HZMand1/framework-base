@@ -20,7 +20,7 @@ public class RedisClient {
 	/**  
 	* @Title: setKey  
 	* @Description: TODO(设置一个key) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:34:35   
 	* @param @param key
 	* @param @param value    参数  
@@ -34,7 +34,7 @@ public class RedisClient {
 	/**  
 	* @Title: setKey  
 	* @Description: TODO(设置一个key带超时) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:34:58   
 	* @param @param key
 	* @param @param value
@@ -49,7 +49,7 @@ public class RedisClient {
 	/**  
 	* @Title: getKey  
 	* @Description: TODO(获取一个key) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:35:13   
 	* @param @param key
 	* @param @return    参数  
@@ -66,7 +66,7 @@ public class RedisClient {
 	/**  
 	* @Title: hasKey  
 	* @Description: TODO(判断一个key是否存在) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:35:24   
 	* @param @param key
 	* @param @return    参数  
@@ -80,7 +80,7 @@ public class RedisClient {
 	/**  
 	* @Title: getKeyExpire  
 	* @Description: TODO(获取一个key的过期时间) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:35:39   
 	* @param @param key
 	* @param @return    参数  
@@ -98,7 +98,7 @@ public class RedisClient {
 	/**  
 	* @Title: getAndSetKey  
 	* @Description: TODO(返回旧值并设置新值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:48:15   
 	* @param @param key
 	* @param @param value
@@ -121,7 +121,7 @@ public class RedisClient {
 	/**  
 	* @Title: strlenKey  
 	* @Description: TODO(返回长度) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:47:59   
 	* @param @param key
 	* @param @return    参数  
@@ -138,7 +138,7 @@ public class RedisClient {
 	/**  
 	* @Title: getRangeStringKey  
 	* @Description: TODO(返回部分) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:49:01   
 	* @param @param key
 	* @param @param start
@@ -154,7 +154,7 @@ public class RedisClient {
 	/**  
 	* @Title: appendStringKey  
 	* @Description: TODO(添加子字符串) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:49:11   
 	* @param @param key
 	* @param @param vlaue
@@ -171,7 +171,7 @@ public class RedisClient {
 	/**  
 	* @Title: setKeyIncrement  
 	* @Description: TODO(设置一个key自增长1) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:35:53   
 	* @param @param key    参数  
 	* @return void    返回类型  
@@ -184,7 +184,7 @@ public class RedisClient {
 	/**  
 	* @Title: setKeyIncrement  
 	* @Description: TODO(设置一个key自增长自定义) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午1:50:18   
 	* @param @param key
 	* @param @param ince    参数  
@@ -200,7 +200,7 @@ public class RedisClient {
 	/**  
 	* @Title: hSetHash  
 	* @Description: TODO(设置一个key value) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:24:19   
 	* @param @param key
 	* @param @param hashKey
@@ -215,7 +215,7 @@ public class RedisClient {
 	/**  
 	* @Title: hmSetHash  
 	* @Description: TODO(设置一个Map) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:24:40   
 	* @param @param key
 	* @param @param values    参数  
@@ -229,7 +229,7 @@ public class RedisClient {
 	/**  
 	* @Title: hsetNXHash  
 	* @Description: TODO(设置一个key value 仅当key不存在) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:24:59   
 	* @param @param key
 	* @param @param hashKey
@@ -244,7 +244,7 @@ public class RedisClient {
 	/**  
 	* @Title: hDelHash  
 	* @Description: TODO(删除一个key) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:26:37   
 	* @param @param key
 	* @param @param hashKey    参数  
@@ -258,7 +258,7 @@ public class RedisClient {
 	/**  
 	* @Title: hDelHash  
 	* @Description: TODO(删除多个key) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:27:01   
 	* @param @param key
 	* @param @param hashKeys    参数  
@@ -272,7 +272,7 @@ public class RedisClient {
 	/**  
 	* @Title: hasKeyHash  
 	* @Description: TODO(判断key是否存在) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:27:14   
 	* @param @param key
 	* @param @param hashKey
@@ -287,7 +287,7 @@ public class RedisClient {
 	/**  
 	* @Title: hGetHash  
 	* @Description: TODO(获取一个key) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:27:31   
 	* @param @param key
 	* @param @param hashKey
@@ -305,7 +305,7 @@ public class RedisClient {
 	/**  
 	* @Title: hmGetHash  
 	* @Description: TODO(获取一系列key) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:28:21   
 	* @param @param key
 	* @param @param hashKeys
@@ -320,7 +320,7 @@ public class RedisClient {
 	/**  
 	* @Title: hgetAllHash  
 	* @Description: TODO(获取整个hash) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:28:44   
 	* @param @param key
 	* @param @return    参数  
@@ -334,7 +334,7 @@ public class RedisClient {
 	/**  
 	* @Title: incrementHash  
 	* @Description: TODO(对应key值加一操作) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:28:57   
 	* @param @param key
 	* @param @param hashKey    参数  
@@ -348,7 +348,7 @@ public class RedisClient {
 	/**  
 	* @Title: incrementHash  
 	* @Description: TODO(对应key值加N操作) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:29:13   
 	* @param @param key
 	* @param @param hashKey
@@ -363,7 +363,7 @@ public class RedisClient {
 	/**  
 	* @Title: incrementFloatHash  
 	* @Description: TODO(对应key值重置0然后加一操作) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:29:25   
 	* @param @param key
 	* @param @param hashKey    参数  
@@ -378,7 +378,7 @@ public class RedisClient {
 	/**  
 	* @Title: hKeysHash  
 	* @Description: TODO(获取全部keys) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:30:00   
 	* @param @param key
 	* @param @return    参数  
@@ -392,7 +392,7 @@ public class RedisClient {
 	/**  
 	* @Title: hLenHash  
 	* @Description: TODO(获取数量) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:30:12   
 	* @param @param key
 	* @param @return    参数  
@@ -406,7 +406,7 @@ public class RedisClient {
 	/**  
 	* @Title: hValsHash  
 	* @Description: TODO(获取全部values) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日上午11:30:25   
 	* @param @param key
 	* @param @return    参数  
@@ -422,7 +422,7 @@ public class RedisClient {
 	/**  
 	* @Title: lpushListKey  
 	* @Description: TODO(设置lpush一个列表值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:48:48   
 	* @param @param key
 	* @param @param value    参数  
@@ -436,7 +436,7 @@ public class RedisClient {
 	/**  
 	* @Title: lpushListKey  
 	* @Description: TODO(设置lpush一个列表) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:48:51   
 	* @param @param key
 	* @param @param values    参数  
@@ -450,7 +450,7 @@ public class RedisClient {
 	/**  
 	* @Title: lpushListKey  
 	* @Description: TODO(设置lpush一个列表) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:48:53   
 	* @param @param key
 	* @param @param values    参数  
@@ -464,7 +464,7 @@ public class RedisClient {
 	/**  
 	* @Title: rpushListKey  
 	* @Description: TODO(设置rpush一个列表值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:48:55   
 	* @param @param key
 	* @param @param value    参数  
@@ -478,7 +478,7 @@ public class RedisClient {
 	/**  
 	* @Title: rpushListKey  
 	* @Description: TODO(设置rpush一个列表) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:48:58   
 	* @param @param key
 	* @param @param values    参数  
@@ -492,7 +492,7 @@ public class RedisClient {
 	/**  
 	* @Title: rpushListKey  
 	* @Description: TODO(设置rpush一个列表) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:01   
 	* @param @param key
 	* @param @param values    参数  
@@ -506,7 +506,7 @@ public class RedisClient {
 	/**  
 	* @Title: indexList  
 	* @Description: TODO(返回下标值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:03   
 	* @param @param key
 	* @param @param index
@@ -521,7 +521,7 @@ public class RedisClient {
 	/**  
 	* @Title: bLPopList  
 	* @Description: TODO(bLPop一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:05   
 	* @param @param key
 	* @param @param timeout
@@ -536,7 +536,7 @@ public class RedisClient {
 	/**  
 	* @Title: bRPopList  
 	* @Description: TODO(bRPopp一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:08   
 	* @param @param key
 	* @param @param timeout
@@ -551,7 +551,7 @@ public class RedisClient {
 	/**  
 	* @Title: bRPopLPushList  
 	* @Description: TODO(bRPopLPush左进右出一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:11   
 	* @param @param key
 	* @param @param otherKey
@@ -567,7 +567,7 @@ public class RedisClient {
 	/**  
 	* @Title: lPopList  
 	* @Description: TODO(lPop一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:13   
 	* @param @param key
 	* @param @return    参数  
@@ -581,7 +581,7 @@ public class RedisClient {
 	/**  
 	* @Title: rPopList  
 	* @Description: TODO(rPop一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:15   
 	* @param @param key
 	* @param @return    参数  
@@ -595,7 +595,7 @@ public class RedisClient {
 	/**  
 	* @Title: rPopList  
 	* @Description: TODO(RPopLPush左进右出一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:18   
 	* @param @param key
 	* @param @param otherKey
@@ -610,7 +610,7 @@ public class RedisClient {
 	/**  
 	* @Title: lPushXList  
 	* @Description: TODO(lPush一个值在最左的地方) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:20   
 	* @param @param key
 	* @param @param value
@@ -625,7 +625,7 @@ public class RedisClient {
 	/**  
 	* @Title: rPushXList  
 	* @Description: TODO(rPush一个值在最右的地方) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:22   
 	* @param @param key
 	* @param @param value
@@ -640,7 +640,7 @@ public class RedisClient {
 	/**  
 	* @Title: inserBeforeList  
 	* @Description: TODO(插入一个值在某个前面) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:25   
 	* @param @param key
 	* @param @param pivot
@@ -655,7 +655,7 @@ public class RedisClient {
 	/**  
 	* @Title: inserAfterList  
 	* @Description: TODO(插入一个值在某个后面) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:27   
 	* @param @param key
 	* @param @param pivot
@@ -670,7 +670,7 @@ public class RedisClient {
 	/**  
 	* @Title: lenList  
 	* @Description: TODO(返回list长度) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:30   
 	* @param @param key
 	* @param @return    参数  
@@ -684,7 +684,7 @@ public class RedisClient {
 	/**  
 	* @Title: lRangeList  
 	* @Description: TODO(返回全部列表内容) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午5:00:36   
 	* @param @param key
 	* @param @return    参数  
@@ -698,7 +698,7 @@ public class RedisClient {
 	/**  
 	* @Title: lRangeList  
 	* @Description: TODO(返回下标start 到end的值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:32   
 	* @param @param key
 	* @param @param start
@@ -714,7 +714,7 @@ public class RedisClient {
 	/**  
 	* @Title: lRemList  
 	* @Description: TODO(删除列表中全部的value值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:36   
 	* @param @param key
 	* @param @param value    参数  
@@ -728,7 +728,7 @@ public class RedisClient {
 	/**  
 	* @Title: lRemList  
 	* @Description: TODO(删除列表中count个的value值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:40   
 	* @param @param key
 	* @param @param value
@@ -743,7 +743,7 @@ public class RedisClient {
 	/**  
 	* @Title: setList  
 	* @Description: TODO(插入一个值到下标) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:42   
 	* @param @param key
 	* @param @param index
@@ -758,7 +758,7 @@ public class RedisClient {
 	/**  
 	* @Title: rtimList  
 	* @Description: TODO(保留下标 start 到 end) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午4:49:44   
 	* @param @param key
 	* @param @param start
@@ -775,7 +775,7 @@ public class RedisClient {
 	/**  
 	* @Title: setSetKey  
 	* @Description: TODO(设置一个set) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:17:35   
 	* @param @param key
 	* @param @param values    参数  
@@ -789,7 +789,7 @@ public class RedisClient {
 	/**  
 	* @Title: setSetKey  
 	* @Description: TODO(设置一个set) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:17:55   
 	* @param @param key
 	* @param @param values    参数  
@@ -803,7 +803,7 @@ public class RedisClient {
 	/**  
 	* @Title: scardKey  
 	* @Description: TODO(返回一个set长度) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:18:07   
 	* @param @param key
 	* @param @return    参数  
@@ -817,7 +817,7 @@ public class RedisClient {
 	/**  
 	* @Title: differenceSet  
 	* @Description: TODO(返回两个key set差集) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:18:20   
 	* @param @param key
 	* @param @param otherKey
@@ -832,7 +832,7 @@ public class RedisClient {
 	/**  
 	* @Title: differenceSet  
 	* @Description: TODO(两个key set差集 并设置到destKey里面) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:18:48   
 	* @param @param key
 	* @param @param otherKey
@@ -848,7 +848,7 @@ public class RedisClient {
 	/**  
 	* @Title: intersectSet  
 	* @Description: TODO(返回两个key set交集) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:19:12   
 	* @param @param key
 	* @param @param otherKey
@@ -863,7 +863,7 @@ public class RedisClient {
 	/**  
 	* @Title: intersectSet  
 	* @Description: TODO(两个key set交集 并设置到destKey里面) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:19:38   
 	* @param @param key
 	* @param @param otherKey
@@ -879,7 +879,7 @@ public class RedisClient {
 	/**  
 	* @Title: unionSet  
 	* @Description: TODO(返回两个key set并集) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:19:59   
 	* @param @param key
 	* @param @param otherKey
@@ -894,7 +894,7 @@ public class RedisClient {
 	/**  
 	* @Title: unionSet  
 	* @Description: TODO(两个key set并集 并设置到destKey里面) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:20:08   
 	* @param @param key
 	* @param @param otherKey
@@ -910,7 +910,7 @@ public class RedisClient {
 	/**  
 	* @Title: isMemberSet  
 	* @Description: TODO(判罚是否存在值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:20:45   
 	* @param @param key
 	* @param @param value
@@ -925,7 +925,7 @@ public class RedisClient {
 	/**  
 	* @Title: meberSet  
 	* @Description: TODO(返回set) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:20:56   
 	* @param @param key
 	* @param @return    参数  
@@ -939,7 +939,7 @@ public class RedisClient {
 	/**  
 	* @Title: popSet  
 	* @Description: TODO(弹出一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:21:05   
 	* @param @param key
 	* @param @return    参数  
@@ -953,7 +953,7 @@ public class RedisClient {
 	/**  
 	* @Title: popSetList  
 	* @Description: TODO(弹出count个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:21:17   
 	* @param @param key
 	* @param @param count
@@ -968,7 +968,7 @@ public class RedisClient {
 	/**  
 	* @Title: sRangeMemberSet  
 	* @Description: TODO(返回一个随机值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:21:44   
 	* @param @param key
 	* @param @return    参数  
@@ -982,7 +982,7 @@ public class RedisClient {
 	/**  
 	* @Title: sRangeMemberSet  
 	* @Description: TODO(返回count个随机值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:21:57   
 	* @param @param key
 	* @param @param count
@@ -997,7 +997,7 @@ public class RedisClient {
 	/**  
 	* @Title: moveSet  
 	* @Description: TODO(吧一个set里面的值移动到另外一个set) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:22:10   
 	* @param @param key
 	* @param @param value
@@ -1012,7 +1012,7 @@ public class RedisClient {
 	/**  
 	* @Title: sremSet  
 	* @Description: TODO(删除一个值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:22:28   
 	* @param @param key
 	* @param @param value    参数  
@@ -1026,7 +1026,7 @@ public class RedisClient {
 	/**  
 	* @Title: sremSet  
 	* @Description: TODO(删除批量值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月12日下午2:22:39   
 	* @param @param key
 	* @param @param values    参数  
@@ -1042,7 +1042,7 @@ public class RedisClient {
 	/**  
 	* @Title: addzSet  
 	* @Description: TODO(添加一个带权重得值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:28:25   
 	* @param @param key
 	* @param @param value
@@ -1057,7 +1057,7 @@ public class RedisClient {
 	/**  
 	* @Title: addzSet  
 	* @Description: TODO(添加一系列带权重得值) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:30:54   
 	* @param @param key
 	* @param @param values    参数  
@@ -1071,7 +1071,7 @@ public class RedisClient {
 	/**  
 	* @Title: zcardZSet  
 	* @Description: TODO(返回基数) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:31:08   
 	* @param @param key
 	* @param @return    参数  
@@ -1085,7 +1085,7 @@ public class RedisClient {
 	/**  
 	* @Title: zcountZSet  
 	* @Description: TODO(返回权重在min至max得成员个数) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:31:40   
 	* @param @param key
 	* @param @param max
@@ -1101,7 +1101,7 @@ public class RedisClient {
 	/**  
 	* @Title: zIncrementZSet  
 	* @Description: TODO(给value得权重加1) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:32:32   
 	* @param @param key
 	* @param @param value    参数  
@@ -1115,7 +1115,7 @@ public class RedisClient {
 	/**  
 	* @Title: zIncrementZSet  
 	* @Description: TODO(给value得权重加N) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:32:53   
 	* @param @param key
 	* @param @param value
@@ -1130,7 +1130,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRangeZSet  
 	* @Description: TODO(返回全部 权重顺序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:34:04   
 	* @param @param key
 	* @param @return    参数  
@@ -1144,7 +1144,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRangeZSet  
 	* @Description: TODO(从下标start到end 权重顺序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:33:08   
 	* @param @param key
 	* @param @param start
@@ -1160,7 +1160,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRangeByScoreZSet  
 	* @Description: TODO(返回权重在min到max之间得set 权重顺序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:34:53   
 	* @param @param key
 	* @param @param max
@@ -1176,7 +1176,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRangeByLexZSet  
 	* @Description: TODO(返回值范围内得set 权重顺序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:36:15   
 	* @param @param key
 	* @param @param range
@@ -1191,7 +1191,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRankZset  
 	* @Description: TODO(返回value得排名) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:37:16   
 	* @param @param key
 	* @param @param value
@@ -1206,7 +1206,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRemZSet  
 	* @Description: TODO(删除value) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:37:55   
 	* @param @param key
 	* @param @param value    参数  
@@ -1220,7 +1220,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRemZSet  
 	* @Description: TODO(批量删除values) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:38:18   
 	* @param @param key
 	* @param @param values    参数  
@@ -1234,7 +1234,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRemRangeByRankZSet  
 	* @Description: TODO(删除下标从start 到end) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:38:30   
 	* @param @param key
 	* @param @param start
@@ -1250,7 +1250,7 @@ public class RedisClient {
 	/**  
 	* @Title: zRemRangeByScoreZSet  
 	* @Description: TODO(删除权重min到max) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:38:54   
 	* @param @param key
 	* @param @param max
@@ -1266,7 +1266,7 @@ public class RedisClient {
 	/**  
 	* @Title: zReverseRangeZSet  
 	* @Description: TODO(返回全部，权重倒序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:41:15   
 	* @param @param key
 	* @param @return    参数  
@@ -1280,7 +1280,7 @@ public class RedisClient {
 	/**  
 	* @Title: zReverseRangeZSet  
 	* @Description: TODO(返回下标start 到end，权重倒序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:39:09   
 	* @param @param key
 	* @param @param start
@@ -1296,7 +1296,7 @@ public class RedisClient {
 	/**  
 	* @Title: zReverseRangeByScoreZSet  
 	* @Description: TODO(返回权重min到max，权重倒序) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:40:53   
 	* @param @param key
 	* @param @param max
@@ -1312,7 +1312,7 @@ public class RedisClient {
 	/**  
 	* @Title: zReverseRankZSet  
 	* @Description: TODO(返回value得倒序排名) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:48:50   
 	* @param @param key
 	* @param @param value
@@ -1327,7 +1327,7 @@ public class RedisClient {
 	/**  
 	* @Title: zScoreZSet  
 	* @Description: TODO(返回一个value得权重) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:49:25   
 	* @param @param key
 	* @param @param value
@@ -1342,7 +1342,7 @@ public class RedisClient {
 	/**  
 	* @Title: zUnionStoreZSet  
 	* @Description: TODO(两个set得并集存到destKey) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:49:44   
 	* @param @param key
 	* @param @param otherKeys
@@ -1357,7 +1357,7 @@ public class RedisClient {
 	/**  
 	* @Title: zUnionStoreZSet  
 	* @Description: TODO(两个set得并集存到destKey)  
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:52:38   
 	* @param @param key
 	* @param @param values
@@ -1372,7 +1372,7 @@ public class RedisClient {
 	/**  
 	* @Title: zInterStoreZSet  
 	* @Description: TODO(两个set得交集存到destKey) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:52:45   
 	* @param @param key
 	* @param @param otherKey
@@ -1387,7 +1387,7 @@ public class RedisClient {
 	/**  
 	* @Title: zInterStoreZSet  
 	* @Description: TODO(两个set得交集存到destKey) 
-	* @author edward38ljh
+	* @author 黄芝民
 	* @date 2019年6月13日下午12:53:57   
 	* @param @param key
 	* @param @param values
