@@ -42,7 +42,7 @@
         <!-- druid -->
         <druid.version>1.0.15</druid.version>
         <!-- database -->
-        <mysql.version>5.1.30</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <!-- log4j -->
         <log4j.version>1.3.8.RELEASE</log4j.version>
         <log4j-api.version>2.11.0</log4j-api.version>
