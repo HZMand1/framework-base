@@ -10,6 +10,8 @@ package com.base.enums;
  */
 public class BaseEnumCollections {
 
+    public static final String GOODS_SEARCH = "goods_search";
+
     /**
      * TODO  http请求响应状态码
      *

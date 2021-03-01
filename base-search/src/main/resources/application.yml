@@ -1,0 +1,53 @@
+server:
+  port: 13001
+  servlet:
+    context-path: /search
+  compression:
+    enabled: true
+  undertow:
+    uriEncoding: utf-8
+    io-threads: 32
+    worker-threads: 32
+    buffer-size: 32
+    buffers-per-region: 32
+    direct-buffers: true
+spring:
+  application:
+    name: config-center
+  thymeleaf:
+    prefix: classpath:/template/
+    cache: false
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+  elasticsearch:
+    rest:
+      uris: [ "http://192.168.100.52:9200" ]
+    host: 192.168.100.52:9200
+    protocol: http # 网络协议
+    common:
+      max-connect: 50 # 最大连接数
+      max-connect-per-route: 50 # 最大路由连接数
+      connect-timeout: 120
+      socket-timeout: 120
+      connect-request-timeout: 60
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000
+    database: 1
+    pool:
+      maxActive: 1000
+      maxIdle: 600
+      minIdle: 20
+      maxWait: -1
+      testOnBorrow: true
+      numTestsPerEvictionRun: 1024
+      timeBetweenEvictionRunsMillis: 30000
+      minEvictableIdleTimeMillis: 1800000
+      softMinEvictableIdleTimeMillis: 1800000
+      testWhileIdle: true
+      blockWhenExhausted: false
+
+
+

@@ -72,6 +72,12 @@
             <version>${javatuples.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>reflectasm</artifactId>
+            <version>1.11.8</version>
+        </dependency>
+
     </dependencies>
 
     <build>

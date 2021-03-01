@@ -20,6 +20,7 @@
         <module>base-system</module>
         <module>base-entity</module>
         <module>base-payment</module>
+        <module>base-search</module>
     </modules>
 
     <properties>
